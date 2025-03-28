@@ -1,0 +1,45 @@
+2025-03-25 06:46:17,575 - DEPRECATED FEATURE: flwr.server.start_server() is deprecated.
+	Instead, use the `flower-superlink` CLI command to start a SuperLink as shown below:
+
+		$ flower-superlink --insecure
+
+	To view usage and all available options, run:
+
+		$ flower-superlink --help
+
+	Using `start_server()` is deprecated.
+
+            This is a deprecated feature. It will be removed
+            entirely in future versions of Flower.
+        
+2025-03-25 06:46:17,577 - Starting Flower server, config: num_rounds=3, no round_timeout
+2025-03-25 06:55:09,308 - DEPRECATED FEATURE: flwr.server.start_server() is deprecated.
+	Instead, use the `flower-superlink` CLI command to start a SuperLink as shown below:
+
+		$ flower-superlink --insecure
+
+	To view usage and all available options, run:
+
+		$ flower-superlink --help
+
+	Using `start_server()` is deprecated.
+
+            This is a deprecated feature. It will be removed
+            entirely in future versions of Flower.
+        
+2025-03-25 06:55:09,309 - Starting Flower server, config: num_rounds=3, no round_timeout
+2025-03-25 06:55:09,316 - Flower ECE: gRPC server running (3 rounds), SSL is disabled
+2025-03-25 06:55:09,317 - [INIT]
+2025-03-25 06:55:09,317 - Requesting initial parameters from one random client
+2025-03-25 06:55:58,910 - Exception iterating responses: 
+Traceback (most recent call last):
+  File "/home/user/Priyanka/fl1/flenv/lib/python3.10/site-packages/grpc/_server.py", line 654, in _take_response_from_response_iterator
+    return next(response_iterator), True
+  File "/home/user/Priyanka/fl1/flenv/lib/python3.10/site-packages/flwr/server/superlink/fleet/grpc_bidi/flower_service_servicer.py", line 119, in Join
+    ins_wrapper: InsWrapper = next(ins_wrapper_iterator)
+  File "/home/user/Priyanka/fl1/flenv/lib/python3.10/site-packages/flwr/server/superlink/fleet/grpc_bidi/grpc_bridge.py", line 166, in ins_wrapper_iterator
+    self._raise_if_closed()
+  File "/home/user/Priyanka/fl1/flenv/lib/python3.10/site-packages/flwr/server/superlink/fleet/grpc_bidi/grpc_bridge.py", line 82, in _raise_if_closed
+    raise GrpcBridgeClosed()
+flwr.server.superlink.fleet.grpc_bidi.grpc_bridge.GrpcBridgeClosed
+2025-03-25 06:55:59,047 - Flower server terminated gracefully.

@@ -1,0 +1,96 @@
+2025-03-25 04:03:58,897 - DEPRECATED FEATURE: flwr.server.start_server() is deprecated.
+	Instead, use the `flower-superlink` CLI command to start a SuperLink as shown below:
+
+		$ flower-superlink --insecure
+
+	To view usage and all available options, run:
+
+		$ flower-superlink --help
+
+	Using `start_server()` is deprecated.
+
+            This is a deprecated feature. It will be removed
+            entirely in future versions of Flower.
+        
+2025-03-25 04:03:58,898 - Starting Flower server, config: num_rounds=3, no round_timeout
+2025-03-25 04:03:58,908 - Flower ECE: gRPC server running (3 rounds), SSL is disabled
+2025-03-25 04:03:58,908 - [INIT]
+2025-03-25 04:03:58,908 - Requesting initial parameters from one random client
+2025-03-25 04:05:35,651 - Received initial parameters from one random client
+2025-03-25 04:05:35,651 - Starting evaluation of initial global parameters
+2025-03-25 04:05:35,651 - Evaluation returned no results (`None`)
+2025-03-25 04:05:35,651 - 
+2025-03-25 04:05:35,651 - [ROUND 1]
+2025-03-25 04:05:41,600 - configure_fit: strategy sampled 3 clients (out of 3)
+2025-03-25 04:06:49,328 - aggregate_fit: received 3 results and 0 failures
+2025-03-25 04:13:23,720 - DEPRECATED FEATURE: flwr.server.start_server() is deprecated.
+	Instead, use the `flower-superlink` CLI command to start a SuperLink as shown below:
+
+		$ flower-superlink --insecure
+
+	To view usage and all available options, run:
+
+		$ flower-superlink --help
+
+	Using `start_server()` is deprecated.
+
+            This is a deprecated feature. It will be removed
+            entirely in future versions of Flower.
+        
+2025-03-25 04:13:23,721 - Starting Flower server, config: num_rounds=3, no round_timeout
+2025-03-25 04:13:23,729 - Flower ECE: gRPC server running (3 rounds), SSL is disabled
+2025-03-25 04:13:23,729 - [INIT]
+2025-03-25 04:13:23,729 - Requesting initial parameters from one random client
+2025-03-25 04:14:11,621 - Received initial parameters from one random client
+2025-03-25 04:14:11,621 - Starting evaluation of initial global parameters
+2025-03-25 04:14:11,621 - Evaluation returned no results (`None`)
+2025-03-25 04:14:11,622 - 
+2025-03-25 04:14:11,622 - [ROUND 1]
+2025-03-25 04:14:11,622 - configure_fit: strategy sampled 3 clients (out of 3)
+2025-03-25 04:15:17,868 - aggregate_fit: received 3 results and 0 failures
+2025-03-25 04:15:18,880 - configure_evaluate: strategy sampled 3 clients (out of 3)
+2025-03-25 04:15:31,216 - aggregate_evaluate: received 0 results and 3 failures
+2025-03-25 04:15:31,216 - 
+2025-03-25 04:15:31,216 - [ROUND 2]
+2025-03-25 04:20:49,211 - Flower server terminated gracefully.
+2025-03-25 04:20:54,834 - DEPRECATED FEATURE: flwr.server.start_server() is deprecated.
+	Instead, use the `flower-superlink` CLI command to start a SuperLink as shown below:
+
+		$ flower-superlink --insecure
+
+	To view usage and all available options, run:
+
+		$ flower-superlink --help
+
+	Using `start_server()` is deprecated.
+
+            This is a deprecated feature. It will be removed
+            entirely in future versions of Flower.
+        
+2025-03-25 04:20:54,835 - Starting Flower server, config: num_rounds=3, no round_timeout
+2025-03-25 04:20:54,842 - Flower ECE: gRPC server running (3 rounds), SSL is disabled
+2025-03-25 04:20:54,842 - [INIT]
+2025-03-25 04:20:54,842 - Requesting initial parameters from one random client
+2025-03-25 04:21:42,343 - Received initial parameters from one random client
+2025-03-25 04:21:42,344 - Starting evaluation of initial global parameters
+2025-03-25 04:21:42,344 - Evaluation returned no results (`None`)
+2025-03-25 04:21:42,344 - 
+2025-03-25 04:21:42,344 - [ROUND 1]
+2025-03-25 04:21:44,514 - configure_fit: strategy sampled 3 clients (out of 3)
+2025-03-25 04:22:54,055 - aggregate_fit: received 3 results and 0 failures
+2025-03-25 04:22:55,098 - configure_evaluate: strategy sampled 3 clients (out of 3)
+2025-03-25 04:23:10,502 - aggregate_evaluate: received 1 results and 2 failures
+2025-03-25 04:23:10,502 - 
+2025-03-25 04:23:10,502 - [ROUND 2]
+2025-03-25 04:24:58,971 - Flower server terminated gracefully.
+2025-03-25 04:24:59,268 - Exception iterating responses: 
+Traceback (most recent call last):
+  File "/home/user/Priyanka/fl1/flenv/lib/python3.10/site-packages/grpc/_server.py", line 654, in _take_response_from_response_iterator
+    return next(response_iterator), True
+  File "/home/user/Priyanka/fl1/flenv/lib/python3.10/site-packages/flwr/server/superlink/fleet/grpc_bidi/flower_service_servicer.py", line 119, in Join
+    ins_wrapper: InsWrapper = next(ins_wrapper_iterator)
+  File "/home/user/Priyanka/fl1/flenv/lib/python3.10/site-packages/flwr/server/superlink/fleet/grpc_bidi/grpc_bridge.py", line 166, in ins_wrapper_iterator
+    self._raise_if_closed()
+  File "/home/user/Priyanka/fl1/flenv/lib/python3.10/site-packages/flwr/server/superlink/fleet/grpc_bidi/grpc_bridge.py", line 82, in _raise_if_closed
+    raise GrpcBridgeClosed()
+flwr.server.superlink.fleet.grpc_bidi.grpc_bridge.GrpcBridgeClosed
